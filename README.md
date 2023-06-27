@@ -1,5 +1,5 @@
 # netdata-windows-dashboard
-A simple web dashboard for the Windows Monitoring of Netdata, styled similarly to the standard dashboard.
+A simple web dashboard to seperate the Windows Monitoring of Netdata from all other monitoring, styled similarly to the standard dashboard.
 
 To edit it to work with your own server, under all ```div```, replace the value of ```data-netdata``` to reflect your Netdata server.<br>
 You should be able to find and replace ```hp``` with what your Windows Server is called in Netdata.
