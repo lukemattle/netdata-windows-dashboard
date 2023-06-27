@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" type="image" href="https://blog.netdata.cloud/img/logo600x600.png">
+    <script>var netdataTheme = 'slate';</script>
+    <script type="text/javascript" src="https://pidash.mattle.uk/dashboard.js"></script>
+
+
+    <title>epic admin</title>
+</head>
+<style>
+          body {
+        background-color: #272b30;
+      }
+      :root {
+          --color-mainBackground: #272b30!important;
+          --color-text: #ffffff99!important;
+          --color-main: #ffffff99!important;
+      }
+      
+      
+</style>
+<body>
+     <h1>&nbsp&nbspPi (Plex, qBittorent, Lomorage, Nextcloud)&nbsp&nbsp<a href="https://pidash.mattle.uk/#menu_windows_hp_submenu_cpu;after=-540;before=0;theme=slate;utc=Europe/London"><img src="https://blog.netdata.cloud/img/logo600x600.png"height="56" width="56"></a></h1>  
+    <div style="width: 100%; text-align: center;">
+        <div class="netdata-container-easypiechart" 
+        style="margin-right: 10px; width: 9%;"
+        data-netdata="windows_hp.os_paging_files_usage" 
+        data-dimensions="used" 
+        data-append-options="percentage" 
+        data-chart-library="easypiechart" 
+        data-title="Used Swap" 
+        data-units="%" 
+        data-easypiechart-max-value="100" 
+        data-width="9%" 
+        data-points="540" 
+        data-colors="#6cab15" 
+        bar-color="272b30"
+        data-after="-1200"
+        role="application"></div>
+
+        <div class="netdata-container-easypiechart" 
+        style="margin-right: 10px; width: 11%;" 
+        data-netdata="windows_hp.logical_disk_C__bandwidth" 
+        data-dimensions="read" 
+        data-chart-library="easypiechart" 
+        data-title="Disk Read" 
+        data-width="11%" 
+        data-points="540" 
+        data-common-units="system.io.mainhead" 
+        data-colors="#6cab15"
+        data-after="-1200"
+        role="application"></div>
+
+        <div class="netdata-container-easypiechart" 
+        style="margin-right: 10px; width: 11%;" 
+        data-netdata="windows_hp.logical_disk_C__bandwidth" 
+        data-dimensions="write" 
+        data-chart-library="easypiechart" 
+        data-title="Disk Write" 
+        data-width="11%" 
+        data-points="540" 
+        data-common-units="system.io.mainhead" 
+        data-after="-1200"
+        role="application"></div>
+
+        <div class="netdata-container-gauge" 
+        style="margin-right: 10px; width: 20%;" 
+        data-netdata="windows_hp.cpu_utilization_total" 
+        data-chart-library="gauge" 
+        data-title="CPU" 
+        data-units="%" 
+        data-gauge-max-value="100" 
+        data-width="20%" 
+        data-points="540" 
+        data-colors="#22AA99" 
+        data-after="-1200"
+        role="application"></div>
+
+        <div class="netdata-container-easypiechart" 
+        style="margin-right: 10px; width: 11%;" 
+        data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_bandwidth" 
+        data-dimensions="received"
+        data-chart-library="easypiechart" 
+        data-title="Net Inbound" 
+        data-width="11%" 
+        data-points="540" 
+        data-common-units="system.net.mainhead" 
+        data-colors="#6cab15" 
+        data-after="-1200"
+        role="application"></div>
+
+        <div class="netdata-container-easypiechart" 
+        style="margin-right: 10px; width: 11%;" 
+        data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_bandwidth" 
+        data-dimensions="sent"
+        data-chart-library="easypiechart" 
+        data-title="Net Outbound" 
+        data-width="11%" 
+        data-points="540" 
+        data-common-units="system.net.mainhead" 
+        data-after="-1200"
+        role="application"></div>
+
+        <div class="netdata-container-easypiechart" 
+        style="margin-right: 10px; width: 9%;" 
+        data-netdata="windows_hp.os_visible_memory_usage" 
+        data-dimensions="used" 
+        data-append-options="percentage" 
+        data-chart-library="easypiechart" 
+        data-title="Used RAM" 
+        data-units="%" 
+        data-easypiechart-max-value="100" 
+        data-width="9%" 
+        data-points="540" 
+        data-colors="#6cab15"
+        data-after="-1200" 
+        role="application">
+
+    </div>
+
+    <h1>CPU</h1>
+    <div data-netdata="windows_hp.cpu_utilization_total"
+    data-chart-library="dygraph"
+    data-width="98%"
+    data-height="200"
+    data-after="-1200"
+    data-dygraph-valuerange="[0, 100]"
+    ></div>
+     <div data-netdata="windows_hp.core_0_0_cpu_utilization"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     data-dygraph-valuerange="[0, 100]"
+     ></div>
+     <div data-netdata="windows_hp.core_0_1_cpu_utilization"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     data-dygraph-valuerange="[0, 100]"
+     ></div> 
+     <div data-netdata="windows_hp.core_0_2_cpu_utilization"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     data-dygraph-valuerange="[0, 100]"
+     ></div>  
+     <div data-netdata="windows_hp.core_0_3_cpu_utilization"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     data-dygraph-valuerange="[0, 100]"
+     ></div>  
+
+     <h1>Disk</h1>
+     <div data-netdata="windows_hp.logical_disk_C__space_usage"
+     data-desired-units="GB"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     data-decimal-digits="-1"
+     data-dygraph-valuerange="[null, null]"
+     
+     ></div> 
+     <div data-netdata="windows_hp.logical_disk_C__bandwidth"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div>
+     <div data-netdata="windows_hp.logical_disk_C__operations"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+     <div data-netdata="windows_hp.logical_disk_C__latency"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+
+     <h1>Network</h1>
+     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_bandwidth"
+     data-chart-library="dygraph"
+     data-width="98%"
+     data-height="200"
+     data-after="-1200"
+     ></div> 
+     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_packets"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_errors"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_errors"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_discarded"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+
+     <h1>RAM</h1>
+     <div data-netdata="windows_hp.os_visible_memory_usage"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+     <div data-netdata="windows_hp.os_paging_files_usage"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div>
+
+     <h1>System</h1>
+     <div data-netdata="windows_hp.os_processes"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div>
+     <div data-netdata="windows_hp.os_users"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div>
+     <div data-netdata="windows_hp.system_threads"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div>
+     <div data-netdata="windows_hp.system_uptime"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div>
+</html>
