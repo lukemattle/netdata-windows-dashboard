@@ -12,7 +12,7 @@
     <script type="text/javascript" src="https://pidash.mattle.uk/dashboard.js"></script>
 
 
-    <title>hp - netdata</title>
+    <title>pc - netdata</title>
 </head>
 <style>
           body {
@@ -27,11 +27,11 @@
       
 </style>
 <body>
-     <h1>&nbsp&nbspHP (Plex, Tautulli)&nbsp&nbsp<a href="https://pidash.mattle.uk/#menu_windows_hp_submenu_cpu;after=-540;before=0;theme=slate;utc=Europe/London"><img src="https://blog.netdata.cloud/img/logo600x600.png"height="56" width="56"></a></h1>  
+     <h1>&nbsp&nbsppc (Plex, Tautulli)&nbsp&nbsp<a href="https://pidash.mattle.uk/#menu_windows_pc_submenu_cpu;after=-540;before=0;theme=slate;utc=Europe/London"><img src="https://blog.netdata.cloud/img/logo600x600.png"height="56" width="56"></a></h1>  
     <div style="width: 100%; text-align: center;">
         <div class="netdata-container-easypiechart" 
         style="margin-right: 10px; width: 9%;"
-        data-netdata="windows_hp.os_paging_files_usage" 
+        data-netdata="windows_pc.os_paging_files_usage" 
         data-dimensions="used" 
         data-append-options="percentage" 
         data-chart-library="easypiechart" 
@@ -47,7 +47,7 @@
 
         <div class="netdata-container-easypiechart" 
         style="margin-right: 10px; width: 11%;" 
-        data-netdata="windows_hp.logical_disk_C__bandwidth" 
+        data-netdata="windows_pc.logical_disk_C__bandwidth" 
         data-dimensions="read" 
         data-chart-library="easypiechart" 
         data-title="Disk Read" 
@@ -60,7 +60,7 @@
 
         <div class="netdata-container-easypiechart" 
         style="margin-right: 10px; width: 11%;" 
-        data-netdata="windows_hp.logical_disk_C__bandwidth" 
+        data-netdata="windows_pc.logical_disk_C__bandwidth" 
         data-dimensions="write" 
         data-chart-library="easypiechart" 
         data-title="Disk Write" 
@@ -72,7 +72,7 @@
 
         <div class="netdata-container-gauge" 
         style="margin-right: 10px; width: 20%;" 
-        data-netdata="windows_hp.cpu_utilization_total" 
+        data-netdata="windows_pc.cpu_utilization_total" 
         data-chart-library="gauge" 
         data-title="CPU" 
         data-units="%" 
@@ -85,7 +85,7 @@
 
         <div class="netdata-container-easypiechart" 
         style="margin-right: 10px; width: 11%;" 
-        data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_bandwidth" 
+        data-netdata="windows_pc.nic_Realtek_Gaming_2_5GbE_Family_Controller_bandwidth" 
         data-dimensions="received"
         data-chart-library="easypiechart" 
         data-title="Net Inbound" 
@@ -98,7 +98,7 @@
 
         <div class="netdata-container-easypiechart" 
         style="margin-right: 10px; width: 11%;" 
-        data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_bandwidth" 
+        data-netdata="windows_pc.nic_Realtek_Gaming_2_5GbE_Family_Controller_bandwidth" 
         data-dimensions="sent"
         data-chart-library="easypiechart" 
         data-title="Net Outbound" 
@@ -110,7 +110,7 @@
 
         <div class="netdata-container-easypiechart" 
         style="margin-right: 10px; width: 9%;" 
-        data-netdata="windows_hp.os_visible_memory_usage" 
+        data-netdata="windows_pc.os_visible_memory_usage" 
         data-dimensions="used" 
         data-append-options="percentage" 
         data-chart-library="easypiechart" 
@@ -126,35 +126,35 @@
     </div>
 
     <h1>CPU</h1>
-    <div data-netdata="windows_hp.cpu_utilization_total"
+    <div data-netdata="windows_pc.cpu_utilization_total"
     data-chart-library="dygraph"
     data-width="98%"
     data-height="200"
     data-after="-1200"
     data-dygraph-valuerange="[0, 100]"
     ></div>
-     <div data-netdata="windows_hp.core_0_0_cpu_utilization"
+     <div data-netdata="windows_pc.core_0_0_cpu_utilization"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      data-dygraph-valuerange="[0, 100]"
      ></div>
-     <div data-netdata="windows_hp.core_0_1_cpu_utilization"
+     <div data-netdata="windows_pc.core_0_1_cpu_utilization"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      data-dygraph-valuerange="[0, 100]"
      ></div> 
-     <div data-netdata="windows_hp.core_0_2_cpu_utilization"
+     <div data-netdata="windows_pc.core_0_2_cpu_utilization"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      data-dygraph-valuerange="[0, 100]"
      ></div>  
-     <div data-netdata="windows_hp.core_0_3_cpu_utilization"
+     <div data-netdata="windows_pc.core_0_3_cpu_utilization"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
@@ -162,8 +162,8 @@
      data-dygraph-valuerange="[0, 100]"
      ></div>  
 
-     <h1>Disk</h1>
-     <div data-netdata="windows_hp.logical_disk_C__space_usage"
+     <h1>Disk (C)</h1>
+     <div data-netdata="windows_pc.logical_disk_C__space_usage"
      data-desired-units="GB"
      data-chart-library="dygraph"
      data-width="49%"
@@ -173,19 +173,49 @@
      data-dygraph-valuerange="[null, null]"
      
      ></div> 
-     <div data-netdata="windows_hp.logical_disk_C__bandwidth"
+     <div data-netdata="windows_pc.logical_disk_C__bandwidth"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div>
-     <div data-netdata="windows_hp.logical_disk_C__operations"
+     <div data-netdata="windows_pc.logical_disk_C__operations"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div> 
-     <div data-netdata="windows_hp.logical_disk_C__latency"
+     <div data-netdata="windows_pc.logical_disk_C__latency"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+
+     <h1>Disk (F)</h1>
+     <div data-netdata="windows_pc.logical_disk_F__space_usage"
+     data-desired-units="GB"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     data-decimal-digits="-1"
+     data-dygraph-valuerange="[null, null]"
+     
+     ></div> 
+     <div data-netdata="windows_pc.logical_disk_F__bandwidth"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div>
+     <div data-netdata="windows_pc.logical_disk_F__operations"
+     data-chart-library="dygraph"
+     data-width="49%"
+     data-height="200"
+     data-after="-600"
+     ></div> 
+     <div data-netdata="windows_pc.logical_disk_F__latency"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
@@ -193,31 +223,31 @@
      ></div> 
 
      <h1>Network</h1>
-     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_bandwidth"
+     <div data-netdata="windows_pc.nic_Realtek_Gaming_2_5GbE_Family_Controller_bandwidth"
      data-chart-library="dygraph"
      data-width="98%"
      data-height="200"
      data-after="-1200"
      ></div> 
-     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_packets"
+     <div data-netdata="windows_pc.nic_Realtek_Gaming_2_5GbE_Family_Controller_packets"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div> 
-     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_errors"
+     <div data-netdata="windows_pc.nic_Realtek_Gaming_2_5GbE_Family_Controller_errors"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div> 
-     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_errors"
+     <div data-netdata="windows_pc.nic_Realtek_Gaming_2_5GbE_Family_Controller_errors"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div> 
-     <div data-netdata="windows_hp.nic_Realtek_PCIe_GbE_Family_Controller_discarded"
+     <div data-netdata="windows_pc.nic_Realtek_Gaming_2_5GbE_Family_Controller_discarded"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
@@ -225,13 +255,13 @@
      ></div> 
 
      <h1>RAM</h1>
-     <div data-netdata="windows_hp.os_visible_memory_usage"
+     <div data-netdata="windows_pc.os_visible_memory_usage"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div> 
-     <div data-netdata="windows_hp.os_paging_files_usage"
+     <div data-netdata="windows_pc.os_paging_files_usage"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
@@ -239,25 +269,25 @@
      ></div>
 
      <h1>System</h1>
-     <div data-netdata="windows_hp.os_processes"
+     <div data-netdata="windows_pc.os_processes"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div>
-     <div data-netdata="windows_hp.os_users"
+     <div data-netdata="windows_pc.os_users"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div>
-     <div data-netdata="windows_hp.system_threads"
+     <div data-netdata="windows_pc.system_threads"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
      data-after="-600"
      ></div>
-     <div data-netdata="windows_hp.system_uptime"
+     <div data-netdata="windows_pc.system_uptime"
      data-chart-library="dygraph"
      data-width="49%"
      data-height="200"
